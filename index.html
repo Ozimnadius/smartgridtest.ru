@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--    <meta name="viewport" content="width=1200">-->
+  <title>
+    Главная </title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+<header class="header">
+  <div class="row">
+    <div class="logo header__left">
+      <img src="images/logo.png" alt="" class="logo__image">
+    </div>
+
+    <div class="header__center">
+
+      <div class="row">
+        <div class="phone">
+          <div class="row phone__row">
+            <i class="phone__icon fa fa-phone"></i>
+            <div class="phone__text">+7 925 148 65 65</div>
+          </div>
+        </div>
+        <div class="mail">
+          <div class="row mail__row">
+            <i class="mail__icon fa fa-envelope"></i>
+            <div class="mail__text">ozimnadius@mail.ru</div>
+          </div>
+        </div>
+        <div class="search">
+          <div class="row">
+            <form class="search__form"
+                  action="http://santehtut.ru.s65.hhos.ru/search/1"
+                  method="post">
+              <input type="text"
+                     class="search_input input_text js-search__input search__input"
+                     value="" placeholder="поиск по сайту" name="search_str">
+
+              <div class="search__submit button button1"
+                   onclick="$(this).parents('form').submit();"></div>
+              <input type="hidden" value="js-enabled" name="js-check"></form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="header__right">
+
+
+      <div class="row">
+        <div class="cart">
+          <div class="cart__text">Корзина</div>
+          <div class="cart__count">0 товаров</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="callback">
+          <a href="#" class="callback__link">Заказать звонок</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</header>
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+/*------------------SECTION-NORMALIZE----------------------*/
+@import "normalize";
+/*------------------SECTION-FONTS----------------------*/
+@import "fonts";
+/*------------------SECTION-AWESOME----------------------*/
+@import "font-awesome";
+/*------------------SECTION-ADJUSTMENT----------------------*/
+@import "adjustment";
+/*------------------SECTION-GRID----------------------*/
+@import "smart-grid";
+
+.row {
+  width: 100%;
+  @include row-flex;
+  //@include align-content(center);
+  @include align-items(center);
+  height: 100%;
+}
+
+.header {
+  @include wrapper;
+  background-color: #fff;
+  &__container {
+    width: 100%;
+    @include row-flex;
+  }
+}
+
+.header__left {
+  @include col;
+  @include col-4;
+}
+
+.header__center {
+  @include col;
+  @include col-5;
+}
+
+.phone {
+  @include col;
+  @include col-6;
+  &__icon {
+    margin-right: 8px;
+  }
+}
+
+.mail {
+  @include col;
+  @include col-6;
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.search {
+  margin-top: 15px;
+  @include col;
+  @include col-12;
+  &__form {
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px 15px;
+  }
+}
+
+.header__right {
+  @include col;
+  @include col-3;
+}
+
+.cart {
+  @include col;
+  &__text {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  &__count {
+
+    font-size: 16px;
+    color: #1a5246;
+    font-weight: bold;
+  }
+}
+
+.callback {
+  margin-top: 15px;
+  @include col;
+  &__link {
+    background-color: #1a5246;
+    color: #ba994c;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 35px;
+    display: inline-block;
+  }
+}
+
